@@ -33,7 +33,7 @@ router.get("/faker",async (req,res) => {
     res.send("aaaaa");
     return;
   }
-  for(let i=0;i<10;i++){
+  for(let i=0;i<4;i++){
     let newCategory = new categoryModel();
     newCategory.name = faker.commerce.department();
     let otherCategory = await categoryModel.findOne({name : newCategory.name});

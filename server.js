@@ -34,10 +34,6 @@ let PORT = process.env.PORT || 3030;
 console.log("PORTTT");
 console.log(process.env.PORT);
 
-// app.get("*", (req,res,next) => {
-//   res.send("XD");
-// })
-
 app.listen(PORT, () => {
   console.log(`server is listening at port ${PORT}`);
 })
